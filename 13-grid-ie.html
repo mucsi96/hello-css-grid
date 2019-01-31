@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="base.css" />
+    <title>Grid IE</title>
+    <style>
+      body {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr 100px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          " A A . "
+          " B D C  ";
+        grid-gap: 100px 50px;
+      }
+
+      .a {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-area: A;
+      }
+
+      .b {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        grid-area: B;
+      }
+
+      .c {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+        grid-area: C;
+      }
+
+      .d {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+        grid-area: D;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box a">A</span> <span class="box b">B</span>
+    <span class="box c">C</span> <span class="box d">D</span>
+  </body>
+</html>

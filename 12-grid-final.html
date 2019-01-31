@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="base.css" />
+    <title>Grid final</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          " A A . "
+          " B D C  ";
+        grid-gap: 100px 50px;
+      }
+
+      .a {
+        grid-area: A;
+      }
+
+      .b {
+        grid-area: B;
+      }
+
+      .c {
+        grid-area: C;
+      }
+
+      .d {
+        grid-area: D;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box a">A</span> <span class="box b">B</span>
+    <span class="box c">C</span> <span class="box d">D</span>
+  </body>
+</html>

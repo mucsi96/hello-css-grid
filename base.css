@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.box {
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.a {
+    background-color: #ffc107;
+}
+
+.b {
+    background-color: #651fff;
+}
+
+.c {
+    background-color: #4caf50;
+}
+
+.d {
+    background-color: #f44336;
+}
